@@ -7,11 +7,11 @@ enum FsdHiddenMode {
   MODE_SHADOW = 3     
 };
 
-bool g_elon_mode_unlocked = false;
+bool g_fsd_mode_unlocked = false;
 bool g_nag_suppressed = false;
 
 void ActivateElonMode() {
-  g_elon_mode_unlocked = true;
+  g_fsd_mode_unlocked = true;
   g_nag_suppressed = true;
 
   ConfigSetBool("driver_monitoring.steering_wheel_nag", false);
